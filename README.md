@@ -3,6 +3,8 @@ Alienvault-Dionaea
 
 This project provides some basic integration between Dionaea (via the HoneyDrive project, http://bruteforce.gr/honeydrive) and Alienvault's OSSIM (http://www.alienvault.com/). 
 
+Although I've included some basic documentation here you should really check out the Wiki page https://github.com/timbrigham/Alienvault-Dionaea/wiki for a better description. 
+
 *alienvault directory*
 
 * 00-dionaealog.conf: Drop in to /etc/rsyslog.d to parse out the dionaealog data source. 
