@@ -1,0 +1,16 @@
+﻿<!-- This is a sample user.xml file. -->
+<!-- To be on the safe side and avoid any conflicting directive IDs, etc you may want to create these settings via the GUI in any 4.x release. -->
+
+<!-- 
+Note the specialized from address listed here - I wanted to retain events caused by my OSSIM server performing scans but *not* correlate and eventually act on them. 
+By using a the '!192.168.x.y' list this allows the various systems expected to perform network scans to not trigger an alarm. 
+-->
+
+
+<directive id="500001" name="Dionaea Threat Detected" priority="5">
+   <rule type="detector" name="Dionaea" from="!192.168.100.42,!192.168.100.4" port_from="ANY" port_to="ANY" reliability="10" occurrence="1" plugin_id="9902" plugin_sid="ANY">
+      <rules>
+         <rule type="detector" name="Dionaea" from="1:SRC_IP" to="1:DST_IP" port_from="ANY" port_to="ANY" reliability="+10" occurrence="10000" time_out="3600" plugin_id="9002" plugin_sid="ANY"/>
+      </rules>
+   </rule>
+</directive>
