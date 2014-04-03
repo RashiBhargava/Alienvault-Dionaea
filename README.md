@@ -1,7 +1,7 @@
 Alienvault-Dionaea
 ==================
 
-This project provides some basic integration between Dionaea (via the HoneyDrive project, bruteforce.gr/honeydrive) and Alienvault's OSSIM (http://www.alienvault.com/). 
+This project provides some basic integration between Dionaea (via the HoneyDrive project, http://bruteforce.gr/honeydrive) and Alienvault's OSSIM (http://www.alienvault.com/). 
 
 *alienvault directory*
 
