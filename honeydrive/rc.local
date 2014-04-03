@@ -1,0 +1,10 @@
+#!/bin/sh -e
+
+/usr/bin/python -- /opt/dionaea-scripts/dionaealog.py  > /dev/null 2>&1 &
+
+/opt/dionaea/bin/dionaea > /dev/null 2>&1  &
+
+
+
+
+exit 0
