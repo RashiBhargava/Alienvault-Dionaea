@@ -8,7 +8,7 @@ By using a the '!192.168.x.y' list this allows the various systems expected to p
 
 
 <directive id="500001" name="Dionaea Threat Detected" priority="5">
-   <rule type="detector" name="Dionaea" from="!192.168.100.42,!192.168.100.4" port_from="ANY" port_to="ANY" reliability="10" occurrence="1" plugin_id="9902" plugin_sid="ANY">
+   <rule type="detector" name="Dionaea" from="!192.168.x.y,!192.168.x.z" port_from="ANY" port_to="ANY" reliability="10" occurrence="1" plugin_id="9902" plugin_sid="ANY">
       <rules>
          <rule type="detector" name="Dionaea" from="1:SRC_IP" to="1:DST_IP" port_from="ANY" port_to="ANY" reliability="+10" occurrence="10000" time_out="3600" plugin_id="9002" plugin_sid="ANY"/>
       </rules>

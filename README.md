@@ -11,6 +11,7 @@ This project provides some basic integration between Dionaea (via the HoneyDrive
 
 * dionaealog.sql: A SQL config file that defines the data source. The ID is 9902, you will want to double check this isn't in use in your environment. Tip - by default the priority and reliability of event 99 is intended to raise an alarm. If you are using correlation directives to manage the Dionaea events you may want to set this to a lower value. 
 
+* user.xml: A sample correlation directive, including how to suppress correlation for specific hosts. 
 
 *honeydrive directory*
 
